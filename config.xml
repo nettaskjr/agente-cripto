@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <binance_api>
+        <!-- API_KEY e API_SECRET serão lidas de variáveis de ambiente por segurança -->
+        <api_key_env_var>BINANCE_API_KEY</api_key_env_var>
+        <api_secret_env_var>BINANCE_SECRET_KEY</api_secret_env_var>
+    </binance_api>
+    
+    <crypto_settings>
+        <symbols>
+            <symbol>BTCUSDT</symbol>
+            <symbol>ETHUSDT</symbol>
+            <symbol>SOLUSDT</symbol>
+        </symbols>
+        <fiat_currency>USDT</fiat_currency>
+    </crypto_settings>
+    
+    <news_settings>
+        <sources>
+            <source name="coindesk">https://www.coindesk.com/news/</source>
+            <!-- Adicionar outras fontes se necessário -->
+        </sources>
+        <positive_keywords>bullish, aumento, crescimento, ganhos, forte, sucesso, otimismo, alta, valorização, recuperação</positive_keywords>
+        <negative_keywords>bearish, queda, perdas, baixa, fraco, preocupação, risco, desvalorização, colapso, correção</negative_keywords>
+        <sentiment_strong_positive_threshold>2</sentiment_strong_positive_threshold>
+        <sentiment_strong_negative_threshold>-2</sentiment_strong_negative_threshold>
+    </news_settings>
+    
+    <recommendation_thresholds>
+        <high_volume_threshold>500000000</high_volume_threshold>
+        <low_volume_threshold>50000000</low_volume_threshold>
+        <strong_buy_change>5.0</strong_buy_change>
+        <buy_change>1.5</buy_change>
+        <strong_sell_change>-5.0</strong_sell_change>
+        <sell_change>-1.5</sell_change>
+        <neutral_price_change_limit>1.0</neutral_price_change_limit>
+    </recommendation_thresholds>
+    
+    <agent_settings>
+        <update_interval_seconds>10</update_interval_seconds>
+        <max_reason_length>35</max_reason_length>
+        <show_full_json>false</show_full_json>
+    </agent_settings>
+</configuration>

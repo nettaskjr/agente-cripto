@@ -1,0 +1,34 @@
+# Arquivos e pastas para ignorar em um projeto Python
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches
+*.egg-info/
+dist/
+build/
+
+# Ambientes virtuais
+venv/
+ENV/
+env/
+.venv/
+
+# Arquivos de configuração do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários ou de editor
+*.swp
+*~
+
+# Logs
+*.log
+
+# Caso haja arquivos de dados sensíveis, como chaves ou segredos
+.env
+
+# Outras pastas ou arquivos que você não deseja versionar podem ser listados abaixo
+
