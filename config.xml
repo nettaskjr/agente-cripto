@@ -40,5 +40,6 @@
         <update_interval_seconds>10</update_interval_seconds>
         <max_reason_length>35</max_reason_length>
         <show_full_json>false</show_full_json>
+        <load_realtime_symbol>BTCUSDT</load_realtime_symbol>
     </agent_settings>
 </configuration>

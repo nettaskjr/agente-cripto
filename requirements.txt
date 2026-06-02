@@ -2,3 +2,4 @@ python-binance
 requests
 beautifulsoup4
 tabulate
+plotext
