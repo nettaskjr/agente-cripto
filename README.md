@@ -64,7 +64,7 @@ Para rodar o agente, recomendamos utilizar um ambiente virtual Python. OBS.: O r
 4. Execute o agente:
 
    ```bash
-   venv/bin/python3 crypto_agent.py
+   python3 crypto_agent.py
    ```
 
 O agente iniciará a coleta de dados, análise das notícias e fará a recomendação de operações, exibindo os resultados em uma tabela formatada no terminal.
